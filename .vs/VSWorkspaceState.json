@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\OpenGL",
+    "\\OpenGL\\dependencies",
+    "\\OpenGL\\dependencies\\GLEW",
+    "\\OpenGL\\dependencies\\GLFW",
+    "\\OpenGL\\OpenGL\\src"
+  ],
+  "SelectedNode": "\\OpenGL",
+  "PreviewInSolutionExplorer": false
+}
