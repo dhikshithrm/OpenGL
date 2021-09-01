@@ -21,13 +21,10 @@ static ShaderProgramSource ParseShader(const std::string& filepath)
 	try
 	{
 		std::ifstream stream(filepath);
-	
-
 	enum class ShaderType
 	{
 		NONE = -1, VERTEX = 0, FRAGMENT = 1
 	};
-
 	std::string line;
 	std::stringstream ss[2];
 	ShaderType type = ShaderType::NONE;
@@ -44,7 +41,7 @@ static ShaderProgramSource ParseShader(const std::string& filepath)
 				type = ShaderType::FRAGMENT;
 			}
 		}
-		else
+		else 
 		{
 			ss[(int)type] << line << '\n';
 		}
@@ -78,6 +75,7 @@ static unsigned int CompileShader(unsigned int type, const std::string& source)
 
 		std::cout << message << std::endl;
 		glDeleteShader(id);
+		
 		return 0;
 	}
 
@@ -145,7 +143,7 @@ int main(void)
 	VertexBuffer vb(positions, 4*2*sizeof(float));
 	
 
-	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(0);  
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), 0);
 
 	IndexBuffer ib(indices, 6);

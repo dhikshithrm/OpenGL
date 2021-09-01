@@ -1,5 +1,9 @@
 ﻿  Application.cpp
+<<<<<<< HEAD
 C:\Users\dhiks\source\repos\dhikshith12\OpenGL\OpenGL\OpenGL\src\Application.cpp(77): warning C4715: 'ParseShader': not all control paths return a value
+=======
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\OpenGL\src\Application.cpp(77): warning C4715: 'ParseShader': not all control paths return a value
+>>>>>>> 6bea56b00f958d17c4c6790401e93eec6ec97673
 Application.obj : error LNK2019: unresolved external symbol glewInit referenced in function main
 Application.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
 Application.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
@@ -28,5 +32,10 @@ Application.obj : error LNK2001: unresolved external symbol __glewUniform4f
 Application.obj : error LNK2001: unresolved external symbol __glewUseProgram
 Application.obj : error LNK2001: unresolved external symbol __glewValidateProgram
 Application.obj : error LNK2001: unresolved external symbol __glewVertexAttribPointer
+<<<<<<< HEAD
 C:\Users\dhiks\source\repos\dhikshith12\OpenGL\OpenGL\Dependencies\GLFW\lib-vc2015\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
 C:\Users\dhiks\source\repos\dhikshith12\OpenGL\OpenGL\x64\Debug\OpenGL.exe : fatal error LNK1120: 28 unresolved externals
+=======
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\Dependencies\GLFW\lib-vc2015\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\x64\Debug\OpenGL.exe : fatal error LNK1120: 28 unresolved externals
+>>>>>>> 6bea56b00f958d17c4c6790401e93eec6ec97673

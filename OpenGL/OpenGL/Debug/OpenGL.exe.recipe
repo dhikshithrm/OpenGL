@@ -2,12 +2,20 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\dhiks\source\repos\dhikshith12\OpenGL\OpenGL\Debug\OpenGL.exe</FullPath>
+=======
+      <FullPath>C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\Debug\OpenGL.exe</FullPath>
+>>>>>>> 6bea56b00f958d17c4c6790401e93eec6ec97673
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
+<<<<<<< HEAD
       <FullPath>C:\Users\dhiks\source\repos\dhikshith12\OpenGL\OpenGL\OpenGL\src\Application.cpp</FullPath>
+=======
+      <FullPath>C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\OpenGL\src\Application.cpp</FullPath>
+>>>>>>> 6bea56b00f958d17c4c6790401e93eec6ec97673
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
