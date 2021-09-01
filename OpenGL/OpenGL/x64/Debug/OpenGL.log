@@ -1,1 +1,32 @@
-﻿
+﻿  Application.cpp
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\OpenGL\src\Application.cpp(77): warning C4715: 'ParseShader': not all control paths return a value
+Application.obj : error LNK2019: unresolved external symbol glewInit referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwInit referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwTerminate referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwCreateWindow referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwWindowShouldClose referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwPollEvents referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwMakeContextCurrent referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwSwapBuffers referenced in function main
+Application.obj : error LNK2019: unresolved external symbol glfwSwapInterval referenced in function main
+Application.obj : error LNK2001: unresolved external symbol __glewBindBuffer
+Application.obj : error LNK2001: unresolved external symbol __glewBufferData
+Application.obj : error LNK2001: unresolved external symbol __glewGenBuffers
+Application.obj : error LNK2001: unresolved external symbol __glewAttachShader
+Application.obj : error LNK2001: unresolved external symbol __glewCompileShader
+Application.obj : error LNK2001: unresolved external symbol __glewCreateProgram
+Application.obj : error LNK2001: unresolved external symbol __glewCreateShader
+Application.obj : error LNK2001: unresolved external symbol __glewDeleteProgram
+Application.obj : error LNK2001: unresolved external symbol __glewDeleteShader
+Application.obj : error LNK2001: unresolved external symbol __glewEnableVertexAttribArray
+Application.obj : error LNK2001: unresolved external symbol __glewGetShaderInfoLog
+Application.obj : error LNK2001: unresolved external symbol __glewGetShaderiv
+Application.obj : error LNK2001: unresolved external symbol __glewGetUniformLocation
+Application.obj : error LNK2001: unresolved external symbol __glewLinkProgram
+Application.obj : error LNK2001: unresolved external symbol __glewShaderSource
+Application.obj : error LNK2001: unresolved external symbol __glewUniform4f
+Application.obj : error LNK2001: unresolved external symbol __glewUseProgram
+Application.obj : error LNK2001: unresolved external symbol __glewValidateProgram
+Application.obj : error LNK2001: unresolved external symbol __glewVertexAttribPointer
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\Dependencies\GLFW\lib-vc2015\glfw3.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\x64\Debug\OpenGL.exe : fatal error LNK1120: 28 unresolved externals

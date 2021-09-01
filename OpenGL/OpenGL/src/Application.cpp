@@ -8,10 +8,11 @@
 #define ASSERT(x) if(!(x)) __debugbreak();
 #define GLCALL(x) GlClearError();\
 	x;\
-    ASSERT(GLLogCall(#x, __FILE__, __LINE__))
+    ASSERT(GLLogCall(#x, __FILE__, __LINE__)) //__FILE_ & __LINE__ specify current file name and line no. after macro exapnsion  // #x is stringified version of x
+
 static void GlClearError()
 {
-	while (glGetError() != GL_NO_ERROR);
+	while (!glGetError());
 }
 
 static bool GLLogCall(const char* function, const char* file, int line)
@@ -38,13 +39,10 @@ static ShaderProgramSource ParseShader(const std::string& filepath)
 	try
 	{
 		std::ifstream stream(filepath);
-	
-
 	enum class ShaderType
 	{
 		NONE = -1, VERTEX = 0, FRAGMENT = 1
 	};
-
 	std::string line;
 	std::stringstream ss[2];
 	ShaderType type = ShaderType::NONE;
@@ -61,7 +59,7 @@ static ShaderProgramSource ParseShader(const std::string& filepath)
 				type = ShaderType::FRAGMENT;
 			}
 		}
-		else
+		else 
 		{
 			ss[(int)type] << line << '\n';
 		}
@@ -95,6 +93,7 @@ static unsigned int CompileShader(unsigned int type, const std::string& source)
 
 		std::cout << message << std::endl;
 		glDeleteShader(id);
+		
 		return 0;
 	}
 
@@ -154,9 +153,9 @@ int main(void)
 	unsigned int buffer;
 	glGenBuffers(1, &buffer);
 	glBindBuffer(GL_ARRAY_BUFFER, buffer);
-	glBufferData(GL_ARRAY_BUFFER, 6*2*sizeof(float),positions,GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, 4*2*sizeof(float),positions,GL_STATIC_DRAW);
 
-	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(0);  
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), 0);
 
 	unsigned int ibo;
@@ -164,8 +163,8 @@ int main(void)
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, 6 * sizeof(unsigned int), indices, GL_STATIC_DRAW);
 
-	ShaderProgramSource source = ParseShader("C:/Users/Dhikshith/Desktop/..dev/oglscpp/OpenGL/OpenGL/res/shaders/Basic.shader");
-
+	ShaderProgramSource source = ParseShader("res/shaders/Basic.shader");
+	  
 	std::cout << "VERTEX" << std::endl;
 	std::cout << source.VertexSource << std::endl;
 	std::cout << "FRAGMENT" << std::endl;

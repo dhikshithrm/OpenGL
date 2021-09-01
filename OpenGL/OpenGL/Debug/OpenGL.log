@@ -1,3 +1,3 @@
 ﻿  Application.cpp
-c:\users\dhikshith\desktop\..dev\oglscpp\opengl\opengl\src\application.cpp(77): warning C4715: 'ParseShader': not all control paths return a value
-  OpenGL.vcxproj -> C:\Users\Dhikshith\Desktop\..dev\oglscpp\OpenGL\Debug\OpenGL.exe
+C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\OpenGL\src\Application.cpp(74): warning C4715: 'ParseShader': not all control paths return a value
+  OpenGL.vcxproj -> C:\Users\dhiks\dev\cppProjects\OpenGL\OpenGL\Debug\OpenGL.exe
